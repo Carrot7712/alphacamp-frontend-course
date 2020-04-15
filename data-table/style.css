@@ -55,13 +55,13 @@ td {
 }
 
 [data-theme="dark"] {
-  --main-dark: #3A3A3A;
-  --grey-1: #E4E4E4;
+  --main-dark: #3a3a3a;
+  --grey-1: #e4e4e4;
   --background-grey: #202020;
   --main-color: transparent;
   --border-color: #e4e4e4;
   --zebra-color: #575757;
-  --header-color: #2E2E2E;
+  --header-color: #2e2e2e;
   --table-grey-text: rgba(255, 255, 255, 37%);
   --white: white;
   --main-text-color: white;
@@ -182,14 +182,17 @@ body {
 
 .table__cell--price {
   width: 140px;
+  position: relative;
 }
 
 .table__cell--starttime {
   width: 140px;
+  position: relative;
 }
 
 .table__cell--endtime {
   width: 140px;
+  position: relative;
 }
 .table__cell--action {
   width: 210px;
@@ -198,6 +201,15 @@ body {
 
 .cell__action__icon {
   cursor: pointer;
+}
+
+.header__cell__icon {
+  cursor: pointer;
+}
+
+.header__cell__icon--right {
+  position: absolute;
+  right: 0;
 }
 
 .action__menu {
