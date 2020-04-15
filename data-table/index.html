@@ -3,6 +3,7 @@
 <head>
 <title>Data Table</title>
 <link rel="stylesheet" type="text/css" href="./style.css">
+<script async src="./app.js" ></script>
 </head>
 <body>
   <nav class="sidebar">
@@ -56,12 +57,14 @@
           <td class="table__cell table__cell--starttime">Start Time</td>
           <td class="table__cell table__cell--endtime">End Time</td>
           <td class="table__cell table__cell--action">
-            <img class="cell__action__icon" src="./static/icons/menu.svg" alt="menu" />
+            <img class="cell__action__icon" src="./static/icons/menu.svg" id="action__input_1" alt="menu" />
+            <div class="action__menu" role="dialog" aria-modal="true" aria-labelledby="action__input_1" id="action__menu_1">
+              I'm a modal
+            </div>
           </td>
         </tr>
       </tbody>
     </table>
   </main>
 </body>
-
 </html>

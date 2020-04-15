@@ -167,8 +167,22 @@ body {
 }
 .table__cell--action {
   width: 210px;
+  position: relative;
 }
 
 .cell__action__icon {
   cursor: pointer;
+}
+
+.action__menu {
+  position: absolute;
+  right: 50%;
+  top: 100%;
+  width: 140px;
+  height: 120px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
 }
