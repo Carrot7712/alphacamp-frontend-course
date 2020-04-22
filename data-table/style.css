@@ -95,7 +95,7 @@ body {
 }
 
 .sidebar__home {
-  height: 64px;
+  min-height: 64px;
   background: var(--logo-url);
   background-size: 100% 100%;
   margin-bottom: 83px;
