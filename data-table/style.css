@@ -40,7 +40,7 @@ td {
 
 /* global */
 :root {
-  --main-dark: #1a1d74;
+  --main-dark: #03396a;
   --grey-1: #e4e4e4;
   --background-grey: #f3f3f3;
   --main-color: #ff6500;
@@ -53,6 +53,7 @@ td {
   --header-text-color: black;
   --table-background-color: #ffffff;
   --logo-url: url("./static/icons/logo.svg");
+  --darkmode-toggle-url: url("./static/icons/darkmode-on.svg");
 }
 
 [data-theme="dark"] {
@@ -69,6 +70,7 @@ td {
   --header-text-color: #aaaaaa;
   --table-background-color: #3a3a3a;
   --logo-url: url("./static/icons/logo-dark.svg");
+  --darkmode-toggle-url: url("./static/icons/darkmode-off.svg");
 }
 html {
   font-size: 14px;
@@ -93,9 +95,6 @@ body {
 }
 
 .sidebar__home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 64px;
   background: var(--logo-url);
   background-size: 100% 100%;
@@ -124,6 +123,18 @@ body {
 
 .sidebar__menu > div:not(:last-child) {
   margin-bottom: 55px;
+}
+
+.sidebar__darkmode__label {
+  background: var(--darkmode-toggle-url);
+  background-size: 100% 100%;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar__darkmode__input {
+  display: none;
 }
 
 .main {
