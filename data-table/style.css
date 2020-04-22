@@ -52,6 +52,7 @@ td {
   --main-text-color: black;
   --header-text-color: black;
   --table-background-color: #ffffff;
+  --logo-url: url("./static/icons/logo.svg");
 }
 
 [data-theme="dark"] {
@@ -67,6 +68,7 @@ td {
   --main-text-color: white;
   --header-text-color: #aaaaaa;
   --table-background-color: #3a3a3a;
+  --logo-url: url("./static/icons/logo-dark.svg");
 }
 html {
   font-size: 14px;
@@ -87,14 +89,16 @@ body {
   flex-direction: column;
   width: 100px;
   background: var(--main-dark);
+  padding-top: 30px;
 }
 
 .sidebar__home {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  background: var(--main-color);
+  height: 64px;
+  background: var(--logo-url);
+  background-size: 100% 100%;
   margin-bottom: 83px;
   cursor: pointer;
 }
