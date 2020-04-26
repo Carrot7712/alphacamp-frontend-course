@@ -117,7 +117,7 @@ body {
   height: 40px;
 }
 
-.sidebar__menu--active {
+.sidebar__menu__link--active {
   background: var(--white);
 }
 
@@ -228,7 +228,7 @@ body {
 }
 
 .action__menu {
-  z-index: 999;
+  z-index: 1;
   position: absolute;
   right: 50%;
   top: 100%;
