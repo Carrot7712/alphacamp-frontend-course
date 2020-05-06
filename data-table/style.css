@@ -149,7 +149,7 @@ body {
   font-size: 48px;
 }
 
-.table {
+.main__table {
   background: var(--table-background-color);
 }
 
